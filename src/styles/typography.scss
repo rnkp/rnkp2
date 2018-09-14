@@ -1,0 +1,91 @@
+
+@font-face {
+    font-family: 'sf_ui_display';
+    src: url('./fonts/sf-ui-display-light.eot');
+    src: url('./fonts/sf-ui-display-light.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/sf-ui-display-light.woff') format('woff'),
+         url('./fonts/sf-ui-display-light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_ui_display';
+    src: url('./fonts/sf-ui-display-medium.eot');
+    src: url('./fonts/sf-ui-display-medium.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/sf-ui-display-medium.woff') format('woff'),
+         url('./fonts/sf-ui-display-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_ui_display';
+    src: url('./fonts/sf-ui-display-bold.eot');
+    src: url('./fonts/sf-ui-display-bold.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/sf-ui-display-bold.woff') format('woff'),
+         url('./fonts/sf-ui-display-bold.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'sf_ui_display';
+    src: url('./fonts/sf-ui-display-regular.eot');
+    src: url('./fonts/sf-ui-display-regular.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/sf-ui-display-regular.woff') format('woff'),
+         url('./fonts/sf-ui-display-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+  font-size: 14px;
+  color: $red;
+  font-style: italic;
+  text-decoration: none;
+  border-bottom: 1px solid $red;
+  text-transform: none;
+  margin-bottom: 5px;
+  outline: none;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+h1 {
+  padding: 20px 0 30px 0;
+  margin: 0;
+}
+h2 {
+  font-size: 20pt;
+  line-height: 20pt;
+}
+h2 span.title {
+  display: block;
+  font-size: 14pt;
+  text-transform: uppercase;
+  margin: 5px 0;
+  color: $red;
+}
+h3 {
+  margin: 0;
+}
+h4 {
+  margin: 0;
+}
+h4 span.title {
+  font-size: 20pt;
+  vertical-align: baseline;
+  color: $red;
+}
+
+i {
+  color: $dark-red;
+}
+
+ol li {
+  margin: 10px 0;
+}

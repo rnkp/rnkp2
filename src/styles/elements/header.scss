@@ -1,0 +1,52 @@
+h1 a {
+  display: block;
+  background: url('./images/logo-color-min.png') 0 0 no-repeat;
+  background-position: center top;
+  max-width: 500px;
+  height: 150px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 10pt;
+  font-weight: 900;
+  padding-top: 130px;
+  color: $font-color--dark;
+  margin: 0 auto;
+  border: none;
+  font-style: normal;
+}
+
+nav {
+  height: 60px;
+  padding: 0;
+}
+
+nav a {
+  float: left;
+  width: 20%;
+  border-left: 1px solid #ccc;
+  position: relative;
+  display: block;
+  position: relative;
+  text-align: center;
+  line-height: 60px;
+  height: 100%;
+  overflow: hidden;
+  font-size: 11px;
+  text-decoration: none;
+  font-style: normal;
+  color: $font-color--dark;
+  border-bottom: none;
+  margin: 0;
+  background: transparent;
+
+  &:last-child {
+    border-right: 1px solid #ccc;
+  }
+
+  &:hover,
+  &.active {
+    background: $red;
+    color: #fff;
+  }
+}
