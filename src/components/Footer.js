@@ -7,7 +7,7 @@ const Footer = () => (
       <footer className={location.pathname === '/' ? 'fixed' : ''}>
         <div className="box">
           <div className="footer_logo left"></div>
-          <p>Российская народная концептуальная программа. 2017. Почёт и процветание. <Link to="/privacy">Все права сохранены &copy;</Link></p>
+          <p>Российская народная концептуальная программа. 2018. Почёт и процветание. <Link to="/privacy">Все права сохранены &copy;</Link></p>
           <div className="clear"></div>
         </div>
       </footer>

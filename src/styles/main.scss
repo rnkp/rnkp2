@@ -184,18 +184,6 @@ small {
   margin: 0px 20px 0 0;
 }
 
-@media screen and (max-width: 480px) {
-  .post_content {
-    padding: 30px 0px 30px 0;
-  }
-
-  .thumb {
-    float: none;
-    width: 100%;
-    margin: 0;
-  }
-}
-
 .col1 {
   width: 40%;
   padding-right: 5%;
@@ -242,8 +230,10 @@ p.indent {
   figure {
     float: none;
     clear: both;
-    margin: 40px 0 0 0;
+    margin: 40px 0;
     text-align: center;
+    display: block;
+    width: 100%;
   }
 
   .cols {
@@ -251,5 +241,15 @@ p.indent {
     width: 100%;
     border: none;
     padding: 0;
+  }
+
+  section .box.box2 .post_content {
+    padding: 20px 10px;
+  }
+
+  .thumb {
+    float: none;
+    width: 100%;
+    margin: 0;
   }
 }

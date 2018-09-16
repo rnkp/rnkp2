@@ -1,6 +1,6 @@
 footer {
-  position: absolute;
-  bottom: 0;  
+  position: relative;
+  bottom: 0;
   left: 0;
   line-height: 34px;
   padding: 10px 40px;
@@ -31,6 +31,10 @@ footer a:hover {
     }
     p,a {
       line-height: 14pt
+    }
+
+    &.fixed {
+      position: fixed;
     }
   }
 }
