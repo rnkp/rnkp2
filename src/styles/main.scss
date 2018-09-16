@@ -55,13 +55,6 @@ ul {
   list-style: none;
 }
 
-header,
-footer {
-  position: relative;
-  background: rgba(255, 255, 255, .8);
-  box-shadow: 0px 0px 5px 0px #555;
-}
-
 blockquote {
   margin: 15px 0 15px 50%;
   font-size: 80%;
@@ -244,7 +237,7 @@ p.indent {
   }
 
   section .box.box2 .post_content {
-    padding: 20px 10px;
+    padding: 30px 10px;
   }
 
   .thumb {

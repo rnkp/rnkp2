@@ -49,4 +49,8 @@ section .box {
     padding: 10px;
     box-shadow: none;
   }
+
+  section .box.box2 h2 {
+    padding: 30px 10px;
+  }
 }

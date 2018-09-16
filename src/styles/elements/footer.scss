@@ -1,21 +1,26 @@
 footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
   line-height: 34px;
   padding: 10px 40px;
   margin: 0;
   width: 100%;
+  background: rgba(255, 255, 255, .8);
+  box-shadow: 0px 0px 5px 0px #555;
 }
+
 footer a {
   line-height: 34px;
 }
+
 footer a:hover {
-  text-decoration:underline;
+  text-decoration: underline;
 }
+
 .footer_logo {
   width: 29px;
-  height: 35px;  
+  height: 35px;
   margin: 0 10px;
   background: url('./images/logo-black-min.png');
   background-size: contain;
@@ -23,16 +28,17 @@ footer a:hover {
 
 @media screen and (max-width: 480px) {
   footer {
+    position: relative;
     padding: 20px 10px;
     box-shadow: none;
     border-top: 1px solid #ccc;
     p {
       margin: 0;
     }
-    p,a {
+    p,
+    a {
       line-height: 14pt
     }
-
     &.fixed {
       position: fixed;
     }
