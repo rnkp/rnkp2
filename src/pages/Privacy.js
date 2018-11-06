@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-const NoMatch = () => (
+const Privacy = () => (
   <section className="privacy-page">
     <Helmet>
       <title>РНКП - Российская народная концептуальная программа</title>
@@ -13,4 +13,4 @@ const NoMatch = () => (
   </section>
 );
 
-export default NoMatch;
+export default Privacy;
