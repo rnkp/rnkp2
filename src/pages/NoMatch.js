@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const NoMatch = () => (
   <section className="privacy-page">

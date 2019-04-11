@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ScrollToTopOnMount from '../components/ScrollToTop';
 
 import Point1 from './points/1';
