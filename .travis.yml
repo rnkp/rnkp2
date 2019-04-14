@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 4.3.1
+- 4.3.1
 addons:
   ssh_known_hosts: webhost.rnk.party
 branches:
@@ -8,16 +8,19 @@ branches:
   - master
   - staging
 before_install:
-  - rvm install 2.2.2
-  - openssl aes-256-cbc -K $encrypted_b0b2958c016f_key -iv $encrypted_b0b2958c016f_iv -in .travis/travis_rsa.enc -out ~/.ssh/travis_rsa -d
-  - chmod 600 ~/.ssh/travis_rsa
+- openssl aes-256-cbc -K $encrypted_e5fe645c7fc5_key -iv $encrypted_e5fe645c7fc5_iv
+  -in travis_rsa.enc -out travis_rsa -d
+- rvm install 2.2.2
+- openssl aes-256-cbc -K $encrypted_b0b2958c016f_key -iv $encrypted_b0b2958c016f_iv
+  -in .travis/travis_rsa.enc -out ~/.ssh/travis_rsa -d
+- chmod 600 ~/.ssh/travis_rsa
 install:
-  - npm install
+- npm install
 script:
-  - npm run build
+- npm run build
 deploy:
   skip_cleanup: true
   provider: script
-  script: .travis/deploy.sh
+  script: ".travis/deploy.sh"
   on:
     all_branches: true
