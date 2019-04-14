@@ -10,12 +10,13 @@ if [ $TRAVIS_BRANCH == "master" ] ; then
     ssh-add ~/.ssh/travis_rsa
     git remote add deploy "travis@rnk.party:/var/www/rnk.party"
     git config user.name "Travis CI"
-    git config user.email "ovchinnikovpa@gmail.com+travis@gmail.com"
+    git config user.email "travis@rnk.party"
 
     # commit compressed files and push it to remote
     git add .
+    git status
     git commit -m "Deploy"
-    git push --force deploy master
+    git push -f deploy HEAD:master
 
 else
 
