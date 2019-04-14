@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - 10.15.3
 addons:
-  ssh_known_hosts: webhost.rnk.party
+  ssh_known_hosts: rnk.party
 branches:
   only:
   - master
