@@ -10,7 +10,7 @@ branches:
 before_install:
 - rvm install 2.2.2
 - openssl aes-256-cbc -K $encrypted_e5fe645c7fc5_key -iv $encrypted_e5fe645c7fc5_iv
-  -in ./.travis/travis_rsa.enc -out travis_rsa -d
+  -in travis_rsa.enc -out travis_rsa -d
 - chmod 600 ~/.ssh/travis_rsa
 install:
 - npm install
