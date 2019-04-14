@@ -1,4 +1,4 @@
-Сайт партии РНКП
+Сайт партии РНКП [![Build Status](https://travis-ci.org/travis-ci/travis-build.svg?branch=master)](https://travis-ci.org/rnkp/rnkp2)
 ============
 
 ---
