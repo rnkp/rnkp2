@@ -9,13 +9,14 @@
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.1.8"
+    "react-scripts": "^3.0.1"
   },
   "scripts": {
     "build-css": "node-sass-chokidar ./src/App.scss ./src/App.css",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start": "npm-run-all -p watch-css start-js",
     "build": "GENERATE_SOURCEMAP=false npm-run-all build-css build-js",
+    "build-map": "npm-run-all build-css build-js",
     "start-js": "react-scripts start",
     "build-js": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
