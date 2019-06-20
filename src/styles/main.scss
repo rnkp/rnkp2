@@ -41,7 +41,7 @@ body {
   color: $font-color--dark;
   line-height: $full-space;
   background: $background--light;
-  font: normal #{$font-size--md}/#{$full-space} 'sf_ui_display', sans-serif;
+  font: normal #{$font-size--md}/#{$full-space} 'sf_ui_display',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
   tap-highlight-color: $tap-highlight;
 }
 
