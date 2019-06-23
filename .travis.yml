@@ -21,4 +21,4 @@ deploy:
   provider: script
   script: chmod +x .travis/deploy.sh && .travis/deploy.sh
   on:
-    all_branches: true
+    branch: master
