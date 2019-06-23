@@ -47,7 +47,13 @@ footer a:hover {
   }
 }
 
-.text-2 {
+
+
+.links {
+  &.links-center {
+    display: block;
+  }
+
   a,
   a:hover {
     text-decoration: none;
@@ -63,6 +69,17 @@ footer a:hover {
       margin: 0 5px 0 0;
     }
   }
+
+  a:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.text-2 {
+  text-align: center;
+  display: none;
 }
 
 .img {
@@ -85,6 +102,20 @@ footer a:hover {
     }
     &.fixed {
       position: fixed;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 930px) {
+  footer {
+    .text-2 {
+      display: block;
+    }
+
+    .links.links-center {
+      display: none;
     }
   }
 }
