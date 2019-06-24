@@ -1,25 +1,20 @@
 #!/bin/bash
-
-# print outputs and exit on first failure
 set -xe
 
-if [ $TRAVIS_BRANCH == "master" ] ; then
+if [ $TRAVIS_BRANCH == 'master' ] ; then
+  eval "$(ssh-agent -s)"
+  ssh-add ~/.ssh/id_rsa
 
-    # setup ssh agent, git config and remote
-    eval "$(ssh-agent -s)"
-    ssh-add ~/.ssh/travis_rsa
-    git remote add deploy "travis@rnk.party:/var/www/rnk.party"
-    git config user.name "Travis CI"
-    git config user.email "travis@gmail.com"
+  cd public
+  git init
 
-    # commit compressed files and push it to remote
-    git add .
-    git status
-    git commit -m "Deploy"
-    git push --force deploy master
+  git remote add deploy "travis@website.com:/opt/website"
+  git config user.name "Travis CI"
+  git config user.email "rnk.program@gmail.com+travis@gmail.com"
 
+  git add .
+  git commit -m "Deploy"
+  git push --force deploy master
 else
-
-    echo "No deploy script for branch '$TRAVIS_BRANCH'"
-
+  echo "Not deploying, since this branch isn't master."
 fi
