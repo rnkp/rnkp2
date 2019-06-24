@@ -8,17 +8,19 @@ branches:
   - master
   - staging
 before_install:
-  - openssl aes-256-cbc -K $encrypted_e5fe645c7fc5_key -iv $encrypted_e5fe645c7fc5_iv
-    -in travis_rsa.enc -out travis_rsa -d
-  - chmod 600 travis_rsa
-  - mv travis_rsa ~/.ssh/id_rsa
+- openssl aes-256-cbc -K $encrypted_ead38c15e869_key -iv $encrypted_ead38c15e869_iv
+  -in travis_rsa.enc -out travis_rsa -d
+- openssl aes-256-cbc -K $encrypted_e5fe645c7fc5_key -iv $encrypted_e5fe645c7fc5_iv
+  -in travis_rsa.enc -out travis_rsa -d
+- chmod 600 travis_rsa
+- mv travis_rsa ~/.ssh/id_rsa
 install:
-  - mkdir $HOME/src
-  - cd $HOME/src
-  - git clone https://github.com/rnkp/rnkp2.git
-  - cd rnkp2
-  - npm install
+- mkdir $HOME/src
+- cd $HOME/src
+- git clone https://github.com/rnkp/rnkp2.git
+- cd rnkp2
+- npm install
 script:
-  - npm run build
+- npm run build
 after_success:
-  - bash .travis/deploy.sh
+- bash .travis/deploy.sh
