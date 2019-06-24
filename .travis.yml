@@ -19,8 +19,8 @@ install:
   - git clone https://github.com/rnkp/rnkp2.git
   - cd rnkp2
   - npm install
-  - cd $TRAVIS_BUILD_DIR
 script:
   - npm run build
+  - cd $TRAVIS_BUILD_DIR
 after_success:
   - bash .travis/deploy.sh
