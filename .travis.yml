@@ -13,8 +13,10 @@ before_install:
   - chmod 600 travis_rsa
   - mv travis_rsa ~/.ssh/id_rsa
 install:
-- npm install
+  - export TRAVIS_BUILD_DIR=$(pwd)
+  - npm install
+  - cd $TRAVIS_BUILD_DIR
 script:
-- npm run build
+  - npm run build
 after_success:
   - bash .travis/deploy.sh
