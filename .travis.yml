@@ -13,7 +13,6 @@ before_install:
   - chmod 600 travis_rsa
   - mv travis_rsa ~/.ssh/id_rsa
 install:
-  - export TRAVIS_BUILD_DIR=$(pwd)
   - mkdir $HOME/src
   - cd $HOME/src
   - git clone https://github.com/rnkp/rnkp2.git
@@ -21,6 +20,5 @@ install:
   - npm install
 script:
   - npm run build
-  - cd $TRAVIS_BUILD_DIR
 after_success:
   - bash .travis/deploy.sh
