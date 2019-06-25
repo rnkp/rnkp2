@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - 10.15.3
 addons:
-  ssh_known_hosts: website.com
+  ssh_known_hosts: 104.248.25.66
 branches:
   only:
   - master
