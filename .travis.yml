@@ -6,15 +6,14 @@ addons:
 branches:
   only:
   - master
-  - staging
 before_install:
 - openssl aes-256-cbc -K $encrypted_e5fe645c7fc5_key -iv $encrypted_e5fe645c7fc5_iv
-  -in travis_rsa.enc -out travis_rsa -d
-- chmod 600 travis_rsa
-- mv travis_rsa ~/.ssh/id_rsa
+  -in deploy_rsa.enc -out deploy_rsa -d
+- chmod 600 deploy_rsa
+- mv deploy_rsa ~/.ssh/id_rsa
 install:
 - npm install
 script:
 - npm run build
 after_success:
-- bash .travis/deploy.sh
+- bash deploy.sh
