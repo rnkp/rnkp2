@@ -9,7 +9,7 @@ if [ $TRAVIS_BRANCH == 'master' ] ; then
   cd build
   git init
 
-  git remote add deploy "travis@website.com:/rnkp/rnkp2"
+  git remote add deploy "travis@rnk.party:/rnkp/rnkp2"
   git config user.name "Travis CI"
   git config user.email "rnk.program@gmail.com+travis@gmail.com"
 
