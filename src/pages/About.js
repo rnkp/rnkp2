@@ -22,9 +22,12 @@ const About = () => (
           <p>Основной принцип партии РНКП состоит в том, что задача правительства — делать для общества людей все то, что им нужно, но что сами они, выступая каждый в своем индивидуальном качестве, не могут сделать совсем или не могут сделать хорошо.</p>
           <hr/>
           <p>Партия РНКП использует самые современные достижения научно-технического прогресса не только для выполнения Программы, но и для функционирования самой партии.</p>
+
           <p>Если Вы нашли ошибку в тексте или в верстке сайта партии РНКП, пожалуйста сообщите нам об этом в нашем репозитории в <a href="https://github.com/rnkp/rnkp2/issues/new" target="_blank" rel="noopener noreferrer">Github</a></p>
           <p>Обсудить Программу и задать вопросы можно в группе в <a href="https://t.me/rnkp_chat" target="_blank" rel="noopener noreferrer">Telegram</a></p>
           <p>Поддержать работу партии РНКП Вы можете через сервис <a href="https://www.patreon.com/rnkp" target="_blank" rel="noopener noreferrer">Patreon</a></p>
+
+          <iframe src="https://www.youtube.com/embed/n0svuurLibQ?controls=0" frameborder="0" style={{width: "100%", height: "500px"}}></iframe>
       </div>
     </div>
   </section>
