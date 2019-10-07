@@ -26,8 +26,6 @@ const About = () => (
           <p>Если Вы нашли ошибку в тексте или в верстке сайта партии РНКП, пожалуйста сообщите нам об этом в нашем репозитории в <a href="https://github.com/rnkp/rnkp2/issues/new" target="_blank" rel="noopener noreferrer">Github</a></p>
           <p>Обсудить Программу и задать вопросы можно в группе в <a href="https://t.me/rnkp_chat" target="_blank" rel="noopener noreferrer">Telegram</a></p>
           <p>Поддержать работу партии РНКП Вы можете через сервис <a href="https://www.patreon.com/rnkp" target="_blank" rel="noopener noreferrer">Patreon</a></p>
-
-          {/* <iframe src="https://www.youtube.com/embed/n0svuurLibQ?controls=0" frameborder="0" style={{width: "100%", height: "500px"}} title="Video"></iframe> */}
       </div>
     </div>
   </section>
