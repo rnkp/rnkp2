@@ -13,7 +13,7 @@ const Footer = () => (
         <div className="box flex">
           <div className="logo-text">
             <img src={logo} alt="Logo" className="img" />
-            <p>Российская народная концептуальная программа<br/><small>© РНКП, 2011–2019</small></p>
+            <p>Российская народная концептуальная программа<br/><small>© РНКП, 2011–2020</small></p>
           </div>
           <p className="links links-center">
             <a href="https://www.patreon.com/rnkp" target="_blank" title="Patreon" rel="noopener noreferrer"><img src={patreon} alt="patreon" /></a>
