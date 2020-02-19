@@ -9,7 +9,7 @@
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^3.0.1"
+    "react-scripts": "^3.4.0"
   },
   "scripts": {
     "build-css": "node-sass-chokidar ./src/App.scss ./src/App.css",
@@ -20,7 +20,8 @@
     "start-js": "react-scripts start",
     "build-js": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
   },
   "browserslist": [
     ">0.2%",

@@ -18,7 +18,7 @@ const Header = () => (
         <a href="/">Российская народная концептуальная программа</a>
       </h1>
       <nav>
-        <MenuLink activeOnlyWhenExact={true} to="/" label="Главная" />
+        <MenuLink activeOnlyWhenExact to="/" label="Главная" />
         <MenuLink to="/about" label="О партии" />
         <MenuLink to="/program" label="Программа" />
         <MenuLink to="/evolution" label="Развитие партии" />
