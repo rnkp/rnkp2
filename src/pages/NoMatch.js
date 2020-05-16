@@ -9,7 +9,7 @@ const NoMatch = () => (
     </Helmet>
     <div className="box">
       <h2>Запрашиваемая страница не найдена</h2>
-      <Link to={"/"}>На главную</Link>
+      <Link to={ "/" }>На главную</Link>
     </div>
   </section>
 );

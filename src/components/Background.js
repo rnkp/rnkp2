@@ -3,9 +3,9 @@ import { Route } from 'react-router-dom';
 
 const Background = () => (
   <Route
-    children={({ location }) => (
-      <div className={location.pathname === '/' ? 'bg' : 'bg blur'}></div>
-    )}
+    children={ ({ location }) => (
+      <div className={ location.pathname === '/' ? 'bg' : 'bg blur' }></div>
+    ) }
   />
 );
 

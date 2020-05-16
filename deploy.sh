@@ -9,7 +9,7 @@ if [ $TRAVIS_BRANCH == 'master' ] ; then
   cd build
 
   git init
-  git remote add origin git@rnk.party:/home/git/rnkp
+  git remote add origin git@rnkp.org:/home/git/rnkp
   git config --global user.email "build@travis-ci.org"
   git add .
   git commit -m 'deploy'

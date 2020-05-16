@@ -33,14 +33,14 @@ const Point = (props) => {
   return (
     <section className="programm-page">
       <Helmet>
-        <title>РНКП - Программа - Пункт {`${number}`}</title>
+        <title>РНКП - Программа - Пункт { `${number}` }</title>
       </Helmet>
       <ScrollToTopOnMount />
       <div className="box">
         <Link to="/program">назад &lt;&lt;</Link>
-        <h3>Пункт {number}</h3>
-        <h2>{points[number].title}</h2>
-        {points[number].content()}
+        <h3>Пункт { number }</h3>
+        <h2>{ points[number].title }</h2>
+        { points[number].content() }
         <Link to="/program">назад &lt;&lt;</Link>
       </div>
     </section>

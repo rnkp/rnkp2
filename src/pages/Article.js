@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import {  Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ScrollToTopOnMount from '../components/ScrollToTop';
 
 import Article1 from './articles/1';
@@ -23,13 +23,13 @@ const Article = (props) => {
   return (
     <section className="article-page">
       <Helmet>
-        <title>РНКП - Статьи | {`${articles[number].title}`}</title>
+        <title>РНКП - Статьи | { `${articles[number].title}` }</title>
       </Helmet>
       <ScrollToTopOnMount />
       <div className="box">
         <Link to="/articles">назад &lt;&lt;</Link>
-        <h2>{articles[number].title}</h2>
-        {articles[number].content()}
+        <h2>{ articles[number].title }</h2>
+        { articles[number].content() }
         <Link to="/articles">назад &lt;&lt;</Link>
       </div>
     </section>
