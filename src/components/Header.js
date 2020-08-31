@@ -5,9 +5,10 @@ const MenuLink = ({ label, to, activeOnlyWhenExact }) => (
   <Route
     path={ to }
     exact={ activeOnlyWhenExact }
-    children={ ({ match }) => (
-      <Link to={ to } className={ match ? 'active' : '' }>{ label }</Link>
-    ) }
+    children={ ({ match }) => {
+      console.log(match);
+      return (<Link to={ to } className={ match ? 'active' : '' }>{ label }</Link>)
+    } }
   />
 );
 
