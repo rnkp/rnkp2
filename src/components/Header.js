@@ -10,8 +10,8 @@ const MenuLink = ({ label, to, activeOnlyWhenExact }) => (
       console.log(match);
       return (
         match
-          ? <Link to={ to } className={ 'active' }>{ label }</Link>
-          : <Link to={ to } >{ label }</Link>
+          ? <Link to={ to } className="active">{ label }</Link>
+          : <Link to={ to } className="notactive">{ label }</Link>
       )
     } }
   />
