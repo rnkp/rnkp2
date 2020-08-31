@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
+import { withRouter } from 'react-router';
 
 const MenuLink = ({ label, to, activeOnlyWhenExact }) => (
   <Route
@@ -7,7 +8,7 @@ const MenuLink = ({ label, to, activeOnlyWhenExact }) => (
     exact={ activeOnlyWhenExact }
     children={ ({ match }) => {
       console.log(match);
-      return (<Link to={ to } className={ match ? 'active' : '' }>{ label }</Link>)
+      return (<Link to={ to } className={ match ? 'active' : null }>{ label }</Link>)
     } }
   />
 );
@@ -29,4 +30,4 @@ const Header = () => (
   </header>
 );
 
-export default Header;
+export default withRouter(Header);
