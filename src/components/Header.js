@@ -8,7 +8,11 @@ const MenuLink = ({ label, to, activeOnlyWhenExact }) => (
     exact={ activeOnlyWhenExact }
     children={ ({ match }) => {
       console.log(match);
-      return (<Link to={ to } className={ match ? 'active' : null }>{ label }</Link>)
+      return (
+        match
+          ? <Link to={ to } className={ 'active' }>{ label }</Link>
+          : <Link to={ to } >{ label }</Link>
+      )
     } }
   />
 );
