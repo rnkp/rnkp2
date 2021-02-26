@@ -6,7 +6,7 @@ if [ $TRAVIS_BRANCH == 'master' ] ; then
 
   ssh-add ~/.ssh/id_rsa
 
-  cd build
+  cd out
 
   git init
   git remote add origin git@rnkp.org:/home/git/rnkp

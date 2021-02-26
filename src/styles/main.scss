@@ -74,9 +74,10 @@ figure {
   height: 100%;
   top: 0;
   left: 0;
-  background: url('./images/bg1.jpg') no-repeat;
+  background: url('../images/bg1.jpg') no-repeat;
   background-size: cover;
   background-position: center bottom;
+  transition: all .5s;
 }
 
 .bg:after {
@@ -84,11 +85,11 @@ figure {
   content: ' ';
   width: 0;
   height: 0;
-  background: url('./images/bg1_blur.jpg');
+  background: url('../images/bg1_blur.jpg');
 }
 
 .bg.blur {
-  background: url('./images/bg1_blur.jpg') no-repeat;
+  background: url('../images/bg1_blur.jpg') no-repeat;
   background-size: cover;
   background-position: center bottom;
 }
@@ -212,12 +213,6 @@ small {
 ul.list {
   list-style: square;
 }
-
-p.indent {
-  text-indent: 30px;
-  text-align: justify;
-}
-
 
 @media screen and (max-width: 480px) {
   figure {
