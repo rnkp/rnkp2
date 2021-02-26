@@ -10,7 +10,7 @@ const Evolution = () => (
       <div className="box">
         <div className="cols col1">
           <figure className="left">
-            <img src="./images/page2_img1.png" alt="Развитие" />
+            <img src="/images/page2_img1.png" alt="Развитие" />
           </figure>
           <h3>План развития партии на основе пяти этапов</h3>
           <p className="clear">

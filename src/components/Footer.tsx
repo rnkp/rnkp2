@@ -12,7 +12,7 @@ const Footer = () => {
     <footer className={ fixedFooter ? 'fixed' : '' }>
       <div className="box flex">
         <div className="logo-text">
-          <img src="../images/logo-color-min.png" alt="Logo" className="img" />
+          <img src="/images/logo-color-min.png" alt="Logo" className="img" />
 
           <p>Российская народная концептуальная программа<br /><small>© РНКП, 2011–2021</small></p>
         </div>

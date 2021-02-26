@@ -8,7 +8,7 @@ const About = () => (
       <HeadComponent title={ 'О нас' } />
       <div className="box">
         <figure className="left">
-          <img src="./images/logo-color-big.png" alt="Российская народная концептуальная программа" />
+          <img src="/images/logo-color-big.png" alt="Российская народная концептуальная программа" />
         </figure>
         <h2>Добро пожаловать на сайт партии <span className="title">Российская народная концептуальная программа</span></h2>
         <p>
