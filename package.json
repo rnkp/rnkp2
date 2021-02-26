@@ -3,25 +3,18 @@
   "version": "2.0.0",
   "private": false,
   "dependencies": {
+    "next": "^10.0.7",
     "node-sass-chokidar": "^1.5.0",
-    "npm-run-all": "^4.1.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.6.3",
-    "react-helmet": "^5.2.0",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "^3.4.3"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^3.4.3",
+    "sass": "^1.32.8"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar ./src/App.scss ./src/App.css",
-    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
-    "start": "npm-run-all -p watch-css start-js",
-    "build": "GENERATE_SOURCEMAP=false npm-run-all build-css build-js",
-    "build-map": "npm-run-all build-css build-js",
-    "start-js": "react-scripts start",
-    "build-js": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "postbuild": "react-snap"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
   },
   "browserslist": [
     ">0.2%",
@@ -30,6 +23,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "react-snap": "^1.23.0"
+    "@types/node": "^14.14.31",
+    "@types/react": "^17.0.2",
+    "typescript": "^4.2.2"
   }
 }

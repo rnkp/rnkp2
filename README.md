@@ -5,8 +5,8 @@
 
 ---
 
-  `npm start` - дев версия
+  `yarn` - дев версия
 
-  `npm run build` - сборка билда
+  `yarn prod && yarn export` - сборка билда
 
 ---

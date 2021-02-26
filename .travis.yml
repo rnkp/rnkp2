@@ -11,8 +11,8 @@ before_install:
 - chmod 600 deploy_rsa
 - mv deploy_rsa ~/.ssh/id_rsa
 install:
-- npm install
+- yarn
 script:
-- npm run build
+- yarn build && yarn export
 after_success:
 - bash deploy.sh

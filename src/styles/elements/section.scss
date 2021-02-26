@@ -1,6 +1,11 @@
 section {
   margin: 50px 0 190px 0;
   min-height: 300px;
+
+  a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 }
 
 section .box {
