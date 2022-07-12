@@ -16,8 +16,8 @@ const Footer = () => {
 
           <p>
             Российская народная концептуальная программа<br />
-            <small>© РНКП, 2011–2022</small><br />
-            <a href="mailto:rnk.program@gmail.com">rnk.program@gmail.com</a>
+            <small>© РНКП, 2011–{process.env.year}</small><br />
+            <a href="mailto:info@rnkp.org">info@rnkp.org</a>
           </p>
         </div>
         <p className="links links-center">

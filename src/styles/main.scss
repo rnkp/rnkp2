@@ -41,8 +41,8 @@ body {
   color: $font-color--dark;
   line-height: $full-space;
   background: $background--light;
-  font: normal #{$font-size--md}/#{$full-space} 'sf_ui_display',-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
-  tap-highlight-color: $tap-highlight;
+  font: normal #{$font-size--md}/#{$full-space} sf_ui_display, sans-serif;
+  -webkit-tap-highlight-color: $tap-highlight;
 }
 
 article {
@@ -74,24 +74,14 @@ figure {
   height: 100%;
   top: 0;
   left: 0;
-  background: url('../images/bg1.jpg') no-repeat;
+  background: url('../images/bg.webp') no-repeat;
   background-size: cover;
   background-position: center bottom;
   transition: all .5s;
-}
 
-.bg:after {
-  position: absolute;
-  content: ' ';
-  width: 0;
-  height: 0;
-  background: url('../images/bg1_blur.jpg');
-}
-
-.bg.blur {
-  background: url('../images/bg1_blur.jpg') no-repeat;
-  background-size: cover;
-  background-position: center bottom;
+  &.blur {
+    filter: blur(6px);
+  }
 }
 
 .economic_regions {

@@ -1,4 +1,7 @@
 module.exports = {
+  env: {
+    year: new Date().getFullYear(),
+  },
   trailingSlash: true,
   exportPathMap: async function () {
     return {
