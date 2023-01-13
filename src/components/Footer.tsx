@@ -26,8 +26,8 @@ const Footer = () => {
           <a href="https://github.com/rnkp" target="_blank" title="Github" rel="noopener noreferrer"><img src="/images/github_logo.png" alt="github" /></a>
         </p>
         <p>
-          <Link href="/privacy">
-            <a>Правила использования</a>
+          <Link href="/privacy" legacyBehavior>
+            Правила использования
           </Link>
         </p>
       </div>

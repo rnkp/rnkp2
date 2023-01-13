@@ -29,7 +29,8 @@ img::-moz-selection {
 
 html,
 body,
-#root {
+#root,
+#__next {
   position: relative;
   height: 100%;
 }

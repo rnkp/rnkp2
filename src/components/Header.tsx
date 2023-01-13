@@ -26,8 +26,8 @@ const Header = () => {
     <header>
       <div className="box">
         <h1>
-          <Link href="/">
-            <a>Российская народная концептуальная программа</a>
+          <Link href="/" legacyBehavior>
+            Российская народная концептуальная программа
           </Link>
         </h1>
         <nav>
