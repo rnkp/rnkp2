@@ -15,6 +15,7 @@ const HeadComponent = (props: { title?: string }) => {
       <link rel="icon" href="/favicon.png" type="image/png" />
       <link rel="canonical" href="https://rnkp.org" />
 
+      <meta property="og:url" content="https://rnkp.org" />
       <meta property="og:title" content="РНКП - Российская народная концептуальная программа" />
       <meta property="og:site_name" content="РНКП - Российская народная концептуальная программа" />
       <meta property="og:locale" content="ru_RU" />
