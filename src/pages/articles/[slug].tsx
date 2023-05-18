@@ -26,7 +26,7 @@ const Article = () => {
   return (
     <App>
       <section className="programm-page">
-        <HeadComponent title={ `Статьи - ${articlesList[number]?.title}` } />
+        <HeadComponent title={ `Статьи${articlesList[number]?.title ? ` - ${articlesList[number].title}` : ''}` } />
 
         <div className="box">
           <p>

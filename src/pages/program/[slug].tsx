@@ -36,7 +36,7 @@ const Point = () => {
   return (
     <App>
       <section className="programm-page">
-        <HeadComponent title={ `Программа - Пункт ${number}. ${pointsList[number]?.title}` } />
+        <HeadComponent title={ `Программа${number ? ` - Пункт ${number}. ${pointsList[number]?.title}` : ''}` } />
 
         <div className="box">
           <p>
