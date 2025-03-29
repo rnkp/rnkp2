@@ -5,8 +5,8 @@
 
 ---
 
-  `yarn` - дев
+  `npm run dev` - дев
 
-  `yarn prod && yarn export` - прод
+  `npm run build && npm run export` - прод
 
 ---
